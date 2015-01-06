@@ -1,0 +1,53 @@
+1. reverse() method of StringBuilder and StringBuffer class in JAVA
+NOTE: This method is NOT present in String class
+NOTE: reverse() method is an instance method of StringBuilder class AND
+reverse() method is also an instance synchronized method of StringBuffer class in JAVA
+
+PLEASE NOTE THAT reverse() method is NOT PRESENT in String class of JAVA. The reason being String class
+in JAVA is immutable. However, for some reason substring() method is present in String class even though String 
+is immutable in JAVA. Also StringBuilder and StringBuffer classes each have substring() method.
+
+Source: http://stackoverflow.com/questions/19814067/time-complexity-of-stringbuilder-reverse-method
+Solution: It is O(n). It is impossible to revert a String in less than O(n)
+
+2. toCharArray() and toString() methods
+NOTE: toCharArray() method is ONLY present in String class & NOT present in StringBuilder and StringBuffer classes.
+toString() method is present in all three classes, String, StringBuilder and StringBuffer classes.
+Source: http://stackoverflow.com/questions/13079261/what-is-the-runtime-of-tochararray-and-tostring-in-java
+Solution:
+As far as String.toCharArray() goes, it's O(N), where N is the number of characters in the string,
+because each character must be copied into the output.
+
+3. substring() method
+NOTE: substring() method is present in all three classes, String, StringBuilder and StringBuffer classes.
+
+Question: What is the time complexity of the following program ?
+
+public static void calculateTimeComplexity(String s){
+  for(int i=0;i<s.length();i++){
+    for(int j=i;j>=0;j--){
+      System.out.println(s.substring(j,i+1));
+    }
+  }
+}
+
+Options: 1. O(n^2)
+         2. O(n^3)
+where n = length of the string
+
+
+Solution:
+
+Answer is option 2. O(n^3)
+
+Source: http://stackoverflow.com/questions/4679746/time-complexity-of-javas-substring
+        http://stackoverflow.com/questions/16123446/java-7-string-substring-complexity
+        http://stackoverflow.com/questions/25514062/what-is-the-time-complexity-of-java-stringbuilder-substring-method-if-it-is-l
+
+Explanation:
+It was O(1) in older versions of Java - as Jon stated, it just created a new String with the same underlying char[],
+and a different offset and length.
+However, this has actually changed started with Java 7 update 6.
+The char[] sharing was eliminated, and the offset and length fields were removed. substring() now just copies all the 
+characters into a new String.
+Ergo, substring is O(n) in Java 7 update
