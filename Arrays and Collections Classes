@@ -1,7 +1,8 @@
 Question:
 Time Complexity of Arrays.sort() and Collections.sort() static methods
 NOTE: Arrays and Collections (BOTH with s) are classes in Java
-Array - Class (http://docs.oracle.com/javase/7/docs/api/java/util/Array.html)
+
+IMP NOTE: There is no such thing as "Array" in Java. "Arrays" exist BUT "Array" does NOT exist.
 Arrays - Class (http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html)
 Collection - INTERFACE (http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html)
 Collections - Interface (http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html)
