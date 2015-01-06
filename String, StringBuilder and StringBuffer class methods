@@ -17,6 +17,11 @@ Source: http://stackoverflow.com/questions/13079261/what-is-the-runtime-of-tocha
 Solution:
 As far as String.toCharArray() goes, it's O(N), where N is the number of characters in the string,
 because each character must be copied into the output.
+toString() is O(N) time complexity.
+The toString() method is implemented using System.arrayCopy, which happens to be a native method.
+I would imagine that the native method probably uses memcpy under the hood which is O(N), so the runtime O
+is dependent on the actual jvm implementation. You might take a look at the open jdk source to check the 
+source for this native method.
 
 3. substring() method of String, StringBuilder and StringBuffer classes
 NOTE: substring() method is present in all three classes, String, StringBuilder and StringBuffer classes.
