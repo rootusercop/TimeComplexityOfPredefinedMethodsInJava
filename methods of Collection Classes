@@ -1,7 +1,11 @@
 Queston :
 What is the time complexity of methods in the Collection Classes ?
 
-Source:  http://www.javaexperience.com/time-complexity-of-collection-classes/
+VERY IMP Sources:  
+http://simplenotions.wordpress.com/2009/05/13/java-standard-data-structures-big-o-notation/
+http://www.javaexperience.com/time-complexity-of-collection-classes/
+http://infotechgems.blogspot.com/2011/11/java-collections-performance-time.html
+http://www.introprogramming.info/english-intro-csharp-book/read-online/chapter-19-data-structures-and-algorithm-complexity/
 
 Solution:
 Java ArrayList time complexity :
