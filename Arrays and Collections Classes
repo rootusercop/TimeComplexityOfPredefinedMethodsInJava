@@ -1,0 +1,10 @@
+Question:
+Time Complexity of Arrays.sort() and Collections.sort() static methods
+NOTE: Arrays and Collections (BOTH with s) are classes in Java
+Array - Class (http://docs.oracle.com/javase/7/docs/api/java/util/Array.html)
+Arrays - Class (http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html)
+Collection - INTERFACE (http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html)
+Collections - Interface (http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html)
+
+Source: http://stackoverflow.com/questions/4254122/what-is-the-time-complexity-of-this-sort-method?rq=1
+Solution: The time complexity of this predefined method of Arrays class and Collections class is nlgn
