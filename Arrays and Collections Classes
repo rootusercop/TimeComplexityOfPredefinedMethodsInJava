@@ -1,5 +1,5 @@
 Question:
-Time Complexity of Arrays.sort() and Collections.sort() static methods
+Time Complexity of Arrays.sort() and Collections.sort() "STATIC" methods
 NOTE: Arrays and Collections (BOTH with s) are classes in Java
 
 IMP NOTE: There is no such thing as "Array" in Java. "Arrays" exist BUT "Array" does NOT exist.
