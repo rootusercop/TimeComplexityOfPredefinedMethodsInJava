@@ -18,7 +18,7 @@ Solution:
 As far as String.toCharArray() goes, it's O(N), where N is the number of characters in the string,
 because each character must be copied into the output.
 
-3. substring() method
+3. substring() method of String, StringBuilder and StringBuffer classes
 NOTE: substring() method is present in all three classes, String, StringBuilder and StringBuffer classes.
 
 Question: What is the time complexity of the following program ?
@@ -51,3 +51,30 @@ However, this has actually changed started with Java 7 update 6.
 The char[] sharing was eliminated, and the offset and length fields were removed. substring() now just copies all the 
 characters into a new String.
 Ergo, substring is O(n) in Java 7 update
+
+4. indexOf() method of String, StringBuilder and StringBuffer classes
+NOTE: indexOf() method is present in all three classes, String, StringBuilder and StringBuffer classes.
+Source: http://stackoverflow.com/questions/12752274/java-indexofstring-str-method-complexity
+The complexity of Java's implementation of indexOf is O(m*n) where n and m are the length of the search string
+and pattern respectively.
+What you can do to improve complexity is to use e.g., the Boyer-More algorithm to intelligently skip comparing
+logical parts of the string which cannot match the pattern.
+
+5. charAt() and deleteCharAt() of String, StringBuilder and StringBuffer classes
+NOTE: BOTH charAt() and deleteCharAt() methods are present in all three classes, String, StringBuilder and StringBuffer classes.
+Question:
+I've been wondering about the implementation of charAt function for String/StringBuilder/StringBuffer
+in java what is the coomplexity of that ? also what about the deleteCharAt() in StringBuffer/StringBuilder ?
+Source: http://stackoverflow.com/questions/6461402/java-charat-and-deletecharat-performance
+Solution: 
+The charAt method is O(1).
+The deleteCharAt method on StringBuilder and StringBuffer is O(N) on average, assuming you are deleting a
+random character from an N character StringBuffer / StringBuilder. (It has to move, on average, 
+half of the remaining characters to fill up the "hole" left by the deleted character.
+There is no amortization over multiple operations; see below.) However, if you delete the last character,
+the cost will be O(1).
+There is no deleteCharAt method for String.
+For String, StringBuffer, and StringBuilder, charAt() is a constant-time operation.
+For StringBuffer and StringBuilder, deleteCharAt() is a linear-time operation.
+StringBuffer and StringBuilder have very similar performance characteristics.
+The primary difference is that the former is synchronized (so is thread-safe) while the latter is not.
