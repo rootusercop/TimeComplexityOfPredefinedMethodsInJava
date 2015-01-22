@@ -1,8 +1,22 @@
 
-Question: On a 64-bit machine is the size of an int in Java 32 bits or 64 bits?
-Question Source: http://stackoverflow.com/questions/400477/on-a-64-bit-machine-is-the-size-of-an-int-in-java-32-bits-or-64-bits
+Question 1: On a 64-bit machine is the size of an int in Java 32 bits or 64 bits?
+Question & Answer Source: http://stackoverflow.com/questions/400477/on-a-64-bit-machine-is-the-size-of-an-int-in-java-32-bits-or-64-bits
 Answer: 32 bits. It's one of the Java language features that the size of the integer does not vary with
 the underlying computer.
 
-Question: Size of different primitve datatypes in Java
+Question 2: Size of different primitve datatypes in Java
 Answer Source: http://cs.fit.edu/~ryan/java/language/java-data.html
+
+Question 3: Why is the range of bytes -128 to 127 in Java?
+Explanation: That means that the question is asking, Why not -127 to +127 (because 1 bit is used as sign bit
+And conversion of 0111 1111 is 127 [please NOTE that 0111 1111 is 127 and NOT 128])
+To check the above please click on this link, which convert binary to decimal,
+http://www.binaryhexconverter.com/binary-to-decimal-converter
+[NOTE: To answer the above queation, please check the answer mentioned in the below link]
+Question & Answer Source: http://stackoverflow.com/questions/3621067/why-is-the-range-of-bytes-128-to-127-in-java
+
+Question 4: How are negative numbers represented in Java?
+Ans: ALL NEGATIVES IN JAVA ARE   "NOTREPRESENTED"  USING SIGN BIT.
+BUT INSTEAD THEY ARE "REPRESENTED" USING 2's COMPLEMENT.
+[NOTE: Please check the answer mentioned in the below link]
+Question and Answer Source: http://stackoverflow.com/questions/2931630/how-are-negative-numbers-represented-in-32-bit-signed-integer
