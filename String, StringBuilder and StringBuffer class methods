@@ -81,6 +81,6 @@ There is no amortization over multiple operations; see below.) However, if you d
 the cost will be O(1).
 There is no deleteCharAt method for String.
 For String, StringBuffer, and StringBuilder, charAt() is a constant-time operation.
-For StringBuffer and StringBuilder, deleteCharAt() is a linear-time operation.
+For StringBuffer and StringBuilder, deleteCharAt() is a linear-time (i.e. O(n)) operation, and NOT constant time operation.
 StringBuffer and StringBuilder have very similar performance characteristics.
 The primary difference is that the former is synchronized (so is thread-safe) while the latter is not.
