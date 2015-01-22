@@ -25,7 +25,7 @@ source for this native method.
 
 3. substring() method of String, StringBuilder and StringBuffer classes
 NOTE: substring() method is present in all three classes, String, StringBuilder and StringBuffer classes.
-
+Answer: The time compexity of substring() method in all three classes is O(n)
 Question: What is the time complexity of the following program ?
 
 public static void calculateTimeComplexity(String s){
@@ -50,7 +50,7 @@ Source: http://stackoverflow.com/questions/4679746/time-complexity-of-javas-subs
         http://stackoverflow.com/questions/25514062/what-is-the-time-complexity-of-java-stringbuilder-substring-method-if-it-is-l
 
 Explanation:
-It was O(1) in older versions of Java - as Jon stated, it just created a new String with the same underlying char[],
+It was O(1) in older versions of Java - it just created a new String with the same underlying char[],
 and a different offset and length.
 However, this has actually changed started with Java 7 update 6.
 The char[] sharing was eliminated, and the offset and length fields were removed. substring() now just copies all the 
