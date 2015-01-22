@@ -66,7 +66,8 @@ What you can do to improve complexity is to use e.g., the Boyer-More algorithm t
 logical parts of the string which cannot match the pattern.
 
 5. charAt() and deleteCharAt() of String, StringBuilder and StringBuffer classes
-NOTE: BOTH charAt() and deleteCharAt() methods are present in all three classes, String, StringBuilder and StringBuffer classes.
+NOTE: charAt() method is present in all three classes, String, StringBuilder and StringBuffer classes.
+deleteCharAt() method is present in StringBuilder and StringBuffer classes. It is not present in String class. 
 Question:
 I've been wondering about the implementation of charAt function for String/StringBuilder/StringBuffer
 in java what is the coomplexity of that ? also what about the deleteCharAt() in StringBuffer/StringBuilder ?
