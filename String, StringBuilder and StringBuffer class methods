@@ -84,3 +84,14 @@ For String, StringBuffer, and StringBuilder, charAt() is a constant-time operati
 For StringBuffer and StringBuilder, deleteCharAt() is a linear-time (i.e. O(n)) operation, and NOT constant time operation.
 StringBuffer and StringBuilder have very similar performance characteristics.
 The primary difference is that the former is synchronized (so is thread-safe) while the latter is not.
+
+
+6. equals() method
+Source: http://stackoverflow.com/questions/14552285/what-is-the-time-complexity-of-equals-in-java-for-2-strings
+NOTE: equals() is a method of Object class. So ALL CLASSES AND INTERFACES in Java have equals() method
+Hence no question arises that whether String, StringBuilder, StringBuffer OR all three classes has equals() method
+because ALL CLASSES AND INTERFACES in Java have equals() method
+Worst case is O(n), unless the two strings are the same object in which case it's O(1).
+(Although in this case n refers to the number of matching characters in the two strings starting
+from the first character, not the total length of the string).
+This is easily possible in O(n), and impossible in less than that, so that's what it should be.
