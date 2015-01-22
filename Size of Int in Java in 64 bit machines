@@ -1,0 +1,8 @@
+
+Question: On a 64-bit machine is the size of an int in Java 32 bits or 64 bits?
+Question Source: http://stackoverflow.com/questions/400477/on-a-64-bit-machine-is-the-size-of-an-int-in-java-32-bits-or-64-bits
+Answer: 32 bits. It's one of the Java language features that the size of the integer does not vary with
+the underlying computer.
+
+Question: Size of different primitve datatypes in Java
+Answer Source: http://cs.fit.edu/~ryan/java/language/java-data.html
