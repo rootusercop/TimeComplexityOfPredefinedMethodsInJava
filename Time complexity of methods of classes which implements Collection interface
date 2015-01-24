@@ -38,6 +38,11 @@ Read/Search any element O(1)
 Update : O(1)
 Delete : O(1)
 Add : O(1)
+keySet() : O(1)
+Source: http://stackoverflow.com/questions/1850802/what-is-the-time-complexity-of-java-util-hashmap-class-keyset-method
+Explanation: Surely keySet() would be O(1). All that it is doing is returning a wrapper object on the HashMap.
+If you are talking about walking over the keyset, then this is O(n), since each next() call is O(1),
+and this needs to be performed n times.
 
 LinkedHashMap time complexity : The elements are placed randomly as with HashMap but are linked together 
 to provide ordered iteration of elements.
