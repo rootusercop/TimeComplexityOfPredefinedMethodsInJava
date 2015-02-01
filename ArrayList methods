@@ -8,3 +8,15 @@ this copying of all the elements due to insufficient space causes (n) operation.
 the time complexity is O(n), but if this case is avoided then the time complexity is O(1), similar to array addition
 operation.
 All of the other operations run in linear time [i.e. O(n) time](roughly speaking).
+
+ArrayList methods time complexity:
+Read/Search any element O(n). If you know the index then the complexity is O(1)
+Update : O(n)
+Delete at beginning: O(n)
+Delete in middle: O(n)
+Delete at end: O(n)
+Add at beginning: O(n)
+Add in middle: O(n)
+Add at end: O(n)
+
+Source: http://www.javaexperience.com/time-complexity-of-collection-classes/#ixzz3QWblGwzS
