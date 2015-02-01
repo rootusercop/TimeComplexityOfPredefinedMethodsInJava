@@ -8,4 +8,3 @@ this copying of all the elements due to insufficient space causes (n) operation.
 the time complexity is O(n), but if this case is avoided then the time complexity is O(1), similar to array addition
 operation.
 All of the other operations run in linear time [i.e. O(n) time](roughly speaking).
-The constant factor is low compared to that for the LinkedList implementation.
