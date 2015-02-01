@@ -1,0 +1,5 @@
+Question: When to use ConcurrentHashMap
+Q & Ans Source: http://stackoverflow.com/questions/14228974/when-to-use-concurrenthashmap
+
+Question: What's the difference between ConcurrentHashMap and Collections.synchronizedMap(Map)?
+Q & Ans Source: http://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap?rq=1
